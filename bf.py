@@ -56,6 +56,7 @@ class BFVM(object):
             except KeyError:
                 continue
             getattr(self, oph)()
+        print
     
     def increment_dp(self):
         self._dp = self._dp + 1
